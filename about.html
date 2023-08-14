@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="image/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>About us</h1>
+    </section>
+   <!-- ----------about us content---------- -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's larget university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nesciunt. Sapiente suscipit rerum quo hic repellendus velit explicabo accusantium, perspiciatis sunt consectetur et vero eius.</p>
+                <a href="" class="herobtn redbtn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="image/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- -----------footer--------------- -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur explicabo et labore ut, perspiciatis commodi nulla nam? Molestiae quos possimus placeat sequi magni, <br> repellendus fugit voluptatum corrupti reprehenderit, maxime sit, pariatur voluptate inventore!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        
+        </div>
+        <p>made with <i class="fa fa-heart"></i> by easy tutorials</p>
+    </section>
+    <!-- JavaScript for Toogle Menu -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="image/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>Our Courses</h1>
+    </section>
+   <!-- ----------Course content---------- -->
+   <section class="course">
+    <h1>Courses we offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odit voluptatum dolorum provident, doloremque minima deleniti dolor voluptatibus aut possimus!</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>INtermediate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde quisquam vero temporibus consequatur, harum, dolores porro explicabo amet quaerat quam asperiores repellendus fugit ea! Ipsam, similique asperiores possimus nulla sint, beatae illum unde consequuntur voluptatibus quidem, ullam dolores et? Beatae pariatur ducimus maxime, praesentium aut soluta laborum animi voluptates similique. Ratione quibusdam, corporis inventore aut esse quidem in maiores adipisci perspiciatis dolorem fuga blanditiis vitae laborum numquam. Autem libero quia praesentium fuga qui eveniet consequuntur laudantium repellendus voluptatum nemo.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde quisquam vero temporibus consequatur, harum, dolores porro explicabo amet quaerat quam asperiores repellendus fugit ea! Ipsam, similique asperiores possimus nulla sint, beatae illum unde consequuntur voluptatibus quidem, ullam dolores et? Beatae pariatur ducimus maxime, praesentium aut soluta laborum animi voluptates similique. Ratione quibusdam, corporis inventore aut esse quidem in maiores adipisci perspiciatis dolorem fuga blanditiis vitae laborum numquam. Autem libero quia praesentium fuga qui eveniet consequuntur laudantium repellendus voluptatum nemo.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde quisquam vero temporibus consequatur, harum, dolores porro explicabo amet quaerat quam asperiores repellendus fugit ea! Ipsam, similique asperiores possimus nulla sint, beatae illum unde consequuntur voluptatibus quidem, ullam dolores et? Beatae pariatur ducimus maxime, praesentium aut soluta laborum animi voluptates similique. Ratione quibusdam, corporis inventore aut esse quidem in maiores adipisci perspiciatis dolorem fuga blanditiis vitae laborum numquam. Autem libero quia praesentium fuga qui eveniet consequuntur laudantium repellendus voluptatum nemo.</p>
+        </div>
+    </div>
+</section>
+<!-- ----------------facilities----------------- -->
+<section class="facilities">
+    <h1>Our facilities</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odit voluptatum dolorum provident, doloremque minima deleniti dolor voluptatibus aut possimus!</p>
+    <dvi class="row">
+        <div class="facilities-col">
+            <img src="image/library.png" alt="">
+            <h3>World Class Library</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odit voluptatum dolorum provident, doloremque minima deleniti dolor voluptatibus aut possimus!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="image/basketball.png" alt="">
+            <h3>Largest Playground</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odit voluptatum dolorum provident, doloremque minima deleniti dolor voluptatibus aut possimus!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="image/cafeteria.png" alt="">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odit voluptatum dolorum provident, doloremque minima deleniti dolor voluptatibus aut possimus!</p>
+        </div>
+    </dvi>
+
+
+</section>
+    <!-- -----------footer--------------- -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur explicabo et labore ut, perspiciatis commodi nulla nam? Molestiae quos possimus placeat sequi magni, <br> repellendus fugit voluptatum corrupti reprehenderit, maxime sit, pariatur voluptate inventore!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        
+        </div>
+        <p>made with <i class="fa fa-heart"></i> by easy tutorials</p>
+    </section>
+    <!-- JavaScript for Toogle Menu -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
